@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Deleting Projects/Users"
 
-User.destroy_all
 Project.destroy_all
+User.destroy_all
 
 3.times do
     User.create!({
@@ -20,22 +20,26 @@ end
 projects = [
   {
     title: "Buff the Deck",
-    user_id: 2, 
+    user_id: 2,
+    area:"Living Room",
     notes: "AAAAAAA"
   },
   {
     title: "Replace Washing Machine",
-    user_id: 3, 
+    user_id: 3,
+    area:"Kitchen",
     notes: "SSSSSSSSSSS"
   },
   {
     title: "Clear Gutters",
-    user_id: 1, 
+    user_id: 1,
+    area:"Bathroom", 
     notes: "DDDDDDDDDDD"
   },  
   {
     title: "Replace Bathroom Door",
-    user_id: 4, 
+    user_id: 4,
+    area:"Outside", 
     notes: "FFFFFFFFFF"
   },
 ]

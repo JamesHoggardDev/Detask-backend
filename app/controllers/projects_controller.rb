@@ -20,14 +20,13 @@ class ProjectsController < ApplicationController
     def update
         project = Project.find(params[:id])
         project.update(project_params)
-
         render json: project
     end
 
     private
 
     def project_params
-        params.permit(:title, :user_id, :notes)
+        params.permit(:title, :user_id, :area, :notes)
     end
 
 end

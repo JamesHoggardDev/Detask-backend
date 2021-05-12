@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_05_09_170359) do
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.integer "user_id"
+    t.string "area"
     t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
